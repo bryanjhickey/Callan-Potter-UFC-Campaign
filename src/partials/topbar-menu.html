@@ -1,0 +1,155 @@
+<style>
+@media (min-width: 992px) {
+
+	#top-bar {
+		position: absolute;
+		top: 0;
+		left: auto;
+		right: 0;
+		width: 60%;
+		height: 40px;
+		line-height: 39px;
+		z-index: 99;
+	}
+
+	.device-md #top-bar { width: 75%; }
+
+	.top-links ul li,
+	.top-links li > a { height: 40px; }
+
+	.top-links ul ul,
+	.top-links ul div.top-link-section { top: 40px; }
+
+	#top-social li,
+	#top-social li a,
+	#top-social li .ts-icon,
+	#top-social li .ts-text {
+		height: 40px;
+		line-height: 40px;
+	}
+
+
+	body:not(.top-search-open) #top-bar {
+		opacity: 1;
+		-webkit-transition: top .4s ease, opacity .2s .2s ease;
+		-o-transition: top .4s ease, opacity .2s .2s ease;
+		transition: top .4s ease, opacity .2s .2s ease;
+	}
+
+	body.top-search-open #top-bar {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+
+	#primary-menu:not(.style-2),
+	#primary-menu:not(.style-2) > ul {
+		height: 60px;
+		-webkit-transition: margin .4s ease, opacity .3s ease;
+		-o-transition: margin .4s ease, opacity .3s ease;
+		transition: margin .4s ease, opacity .3s ease;
+	}
+
+	#primary-menu:not(.style-2) { margin-top: 40px; }
+
+	#header.sticky-header:not(.static-sticky) #primary-menu { margin-top: 0; }
+
+	#header #primary-menu > ul > li > a {
+		padding-top: 19px;
+		padding-bottom: 19px;
+	}
+
+	#primary-menu ul ul { top: 60px; }
+
+	#top-search,
+	#top-cart {
+		margin-top: 20px !important;
+		margin-bottom: 20px !important;
+	}
+
+	#top-cart .top-cart-content { top: 40px; }
+
+	#top-bar-subscribe { padding: 2px 10px 4px !important; }
+
+}
+
+#top-bar .col_half.col_last { float: right; }
+
+#top-social	{
+	display: block !important;
+	float: left;
+}
+
+#top-bar-subscribe {
+	float: left;
+	width: 300px;
+	line-height: 34px;
+	padding: 5px 10px;
+	border-left: 1px solid #EEE;
+}
+
+.device-sm #top-bar .col_half.col_last,
+.device-xs #top-bar .col_half.col_last,
+.device-xxs #top-bar .col_half.col_last { float: none; }
+
+.device-sm #top-bar-subscribe,
+.device-xs #top-bar-subscribe {
+	float: right;
+	border-left: 0;
+}
+
+.device-xxs #top-social,
+.device-xxs #top-bar-subscribe {
+	float: none;
+	text-align: center;
+	width: auto;
+}
+
+.device-xxs #top-social {
+	border-bottom: 1px solid #EEE;
+	height: 44px;
+}
+
+.device-xxs #top-social ul { display: inline-block; }
+
+</style>
+
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Top Bar
+		============================================= -->
+		<div id="top-bar">
+
+			<div class="col_half col_last clearfix nobottommargin">
+
+				<!-- Top Social
+				============================================= -->
+				<div id="top-social" class="clearfix">
+					<ul>
+						<li><a href="#" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook</span></a></li>
+						<li><a href="#" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
+						<li><a href="#" class="si-dribbble"><span class="ts-icon"><i class="icon-dribbble"></i></span><span class="ts-text">Dribbble</span></a></li>
+					</ul>
+				</div><!-- #top-social end -->
+
+				<div id="top-bar-subscribe">
+					<div id="widget-subscribe-form2-result" data-notify-type="success" data-notify-msg=""></div>
+					<form id="widget-subscribe-form2" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="icon-email2"></i></span>
+							<input type="email" id="widget-subscribe-form2-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+							<span class="input-group-btn">
+								<button class="btn btn-success" type="submit">Subscribe</button>
+							</span>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+		</div><!-- #top-bar end -->
+
+	</div><!-- #wrapper end -->

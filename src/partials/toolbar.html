@@ -1,0 +1,124 @@
+<style>
+#toolbar {
+	position: fixed;
+	z-index: 399;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 100%;
+	color: #FFF;
+	background-color: #222;
+}
+
+#toolbar.toolbar-right {
+	left: auto;
+	right: 0;
+}
+
+#toolbar ~ #header #header-wrap { padding: 0 0 0 60px; }
+
+#toolbar.toolbar-right ~ #header #header-wrap { padding: 0 60px 0 0; }
+
+#toolbar ul {
+	margin: 0;
+	list-style: none;
+}
+
+#toolbar nav li {
+	position: relative;
+	display: block;
+}
+
+#toolbar nav li a {
+	display: block;
+	position: relative;
+	text-align: center;
+	color: #FFF;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#toolbar nav li a i {
+	font-size: 20px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	margin: 0;
+}
+
+#toolbar nav li a:hover i { background-color: #333; }
+
+#toolbar nav li span {
+	position: absolute;
+	opacity: 0;
+	width: auto;
+	top: 0;
+	left: 50px;
+	background-color: #333;
+	color: #FFF;
+	padding: 0 20px 0 5px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	white-space: nowrap;
+	pointer-events: none;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+#toolbar.toolbar-right nav li span {
+	left: auto;
+	right: 50px;
+	padding: 0 5px 0 20px;
+}
+
+#toolbar nav li a:hover span {
+	opacity: 1;
+	left: 60px;
+	pointer-events: auto;
+}
+
+#toolbar.toolbar-right nav li a:hover span {
+	left: auto;
+	right: 60px;
+}
+
+</style>
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<div id="toolbar" class="toolbar-right">
+			<nav class="vertical-middle">
+				<ul>
+					<li><a href="#"><i class="icon-et-profile-male"></i><span>Profile</span></a></li>
+					<li><a href="#"><i class="icon-et-chat"></i><span>Start Chat</span></a></li>
+					<li><a href="#"><i class="icon-et-lock"></i><span>Logout</span></a></li>
+				</ul>
+			</nav>
+		</div>
+
+		
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+
+					
+
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+		
+	</div>
