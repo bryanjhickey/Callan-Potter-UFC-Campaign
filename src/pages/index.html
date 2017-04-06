@@ -9,21 +9,15 @@
 			<div class="clearfix"></div>
 			<img class="bottommargin"src="assets/images/logo.svg" alt="Cal 4 UFC | Australai's Number 1 Lightwieght" width="350" style="width: 350px; display: block; margin: 0 auto;">
 			<p>He is a Mixed Martial Artists and Brazilian Jiu Jitsu black belt. Holding a professional record of 15 wins and 5 losses; 5 by knock out and 9 by way of submission. He is the reigning Hex Lightweight Champion, the Eternal Lightweight Champion, the Valor Welterweight Champion. Fighting out of Sunbury, Victoria by way of Renegade MMA in Kensington. He is Callan "The Rockstar" Potter.</p>
-			<a href="https://www.facebook.com/dialog/share?
-			  app_id=619180574944133
-			  &display=popup
-			  &href=http%3A%2F%cal4ufc.com%2F
-			  &redirect_uri=http%3A%2F%cal4ufc.com%2F" class="button fb-share">Share</a>
+			<a id="facebook" class="button fb-share">Share</a>
 			  <script>
-			  	$(document).ready(function() {
-				    $('.fb-share').click(function() {
-				        FB.ui({
-					      method: 'share',
-					      mobile_iframe: true,
-					      href: 'http://cal4ufc.com/',
-					    }, function(response){});
-				    });
-				});
+				document.getElementById('facebook').onclick = function() {
+				  FB.ui({
+				    method: 'share',
+				    display: 'popup',
+				    href: 'http://cal4ufc.com/',
+				  });
+				}
 			  </script>
 		</div>
 
