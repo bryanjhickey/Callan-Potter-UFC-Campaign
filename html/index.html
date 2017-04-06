@@ -83,7 +83,18 @@
       			  app_id=619180574944133
       			  &display=popup
       			  &href=http%3A%2F%cal4ufc.com%2F
-      			  &redirect_uri=http%3A%2F%cal4ufc.com%2F" class="button">Share</a>
+      			  &redirect_uri=http%3A%2F%cal4ufc.com%2F" class="button fb-share">Share</a>
+      			  <script>
+      			  	$(document).ready(function() {
+      				    $('.fb-share').click(function() {
+      				        FB.ui({
+      					      method: 'share',
+      					      mobile_iframe: true,
+      					      href: 'http://cal4ufc.com/',
+      					    }, function(response){});
+      				    });
+      				});
+      			  </script>
       		</div>
       
       	</div>
