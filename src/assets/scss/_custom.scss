@@ -1,1 +1,19 @@
 // "scriptorama-markdown-jf"
+
+::selection {
+	background: $theme-color;
+	color: #FFF;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: $theme-color; /* Firefox */
+	color: #FFF;
+	text-shadow: none;
+}
+
+::-webkit-selection {
+	background: $theme-color; /* Safari */
+	color: #FFF;
+	text-shadow: none;
+}
